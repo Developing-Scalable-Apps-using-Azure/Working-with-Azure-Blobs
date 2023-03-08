@@ -3,6 +3,7 @@
 ## Services used:
 
 - [Azure Storage](https://azure.microsoft.com/en-us/products/category/storage/)
+- [Azure Storage Explorer](https://azure.microsoft.com/en-us/products/storage/storage-explorer/)
 
 ## Instructions to make the demo work
 
@@ -20,8 +21,9 @@ Create a container
 az storage container create -n images --account-name ibstrg02 --fail-on-exist 
 ```
 
+### Step 2 - Connect using Azure Storage Explorer
 
-### Step 2
+### Step 3
 Clone the GitHub repo in Visual Studio 2022 IDE - [Working with Azure Blobs](https://github.com/Developing-Scalable-Apps-using-Azure/Working-with-Azure-Blobs.git)
 
 Connect using connection string 
