@@ -34,7 +34,7 @@ namespace NetClientExamplev12.Pages
             //////////////////////////////////////////
             /// Shared Key Authentication
             /// 
-            var containerName = "librarycontainer";
+            var containerName = "images";
 
             /// Connect using connection string (in portal: Settings -> Access Keys -> Connection String)
             //var connectionString = "";
@@ -51,7 +51,7 @@ namespace NetClientExamplev12.Pages
             //////////////////////////////////////////
             /// Shared Access Signature (SAS) Authentication
             /// 
-            var sasURL = "https://ibsa01.blob.core.windows.net/library?sp=rawl&st=2022-02-06T08:55:38Z&se=2022-02-26T16:55:38Z&spr=https&sv=2020-08-04&sr=c&sig=3Fo3oCLfsqfYBUgpzpKmDUoFau%2BggDWM%2FzDuNaUN56o%3D";
+            var sasURL = "https://ibstrg01.blob.core.windows.net/?sv=2021-12-02&ss=bfqt&srt=sco&sp=rwdlacupiytfx&se=2023-03-08T14:32:55Z&st=2023-03-08T06:32:55Z&spr=https&sig=4KfV7yy3Qu6SNwn5eB6ODrETBl63j6xRQorYEgQJCho%3D";
             UriBuilder sasUri = new UriBuilder(sasURL);
             BlobServiceClient blobServiceClient = new BlobServiceClient(sasUri.Uri);
 
