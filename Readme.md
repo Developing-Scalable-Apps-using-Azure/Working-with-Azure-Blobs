@@ -27,14 +27,18 @@ Clone the GitHub repo in Visual Studio 2022 IDE - [Working with Azure Blobs](htt
 Connect using connection string 
 ```
 Navigate in portal: Settings -> Access Keys -> Connection String
+
 Replace the var connectionString value in index.cshtml.cs with the above connection 
+
 Run the project using Visual Studio and upload a file to the images container
 ```
 
 
 Connect using Shared access Signature 
 Navigate in portal: Settings -> Shared Access Signature -> Allow all resource types -> Generate SAS and Connection String
+
 Replace the var sasURL value in index.cshtml.cs with the Blob service SAS URL
+
 Run the project using Visual Studio and upload a file to the images container
 ```
 
