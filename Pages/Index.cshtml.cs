@@ -37,23 +37,29 @@ namespace NetClientExamplev12.Pages
             var containerName = "images";
 
             /// Connect using connection string (in portal: Settings -> Access Keys -> Connection String)
-            //var connectionString = "";
-            //BlobServiceClient blobServiceClient = new BlobServiceClient(connectionString);
+            var connectionString = "";
+            BlobServiceClient blobServiceClient = new BlobServiceClient(connectionString);
 
+
+/*
             /// Connect using Storage Account Key (in portal: Settings -> Access Keys -> Key)
-            //string accountName = "nmstgacct1";
-            //string accountKey = "yrJ0IuEKR0+r1JuguDZ42Y52VJ4f+3wOqIRm+1TkSg+ury0myNqhCMVjVnbDL73RmhxMdbnpkihYd0CdFGlY1g==";
-            /// Blob service URL can be found in portal: Settings -> Properties -> Blob Service
-            //Uri serviceUri = new Uri("https://nmstgacct1.blob.core.windows.net/");
-            //StorageSharedKeyCredential credential = new StorageSharedKeyCredential(accountName, accountKey);
-            //BlobServiceClient blobServiceClient = new BlobServiceClient(serviceUri, credential);
+            string accountName = "<your-storage-account-name>";
+            string accountKey = "<your-storage-account-key>";
 
+            /// Blob service URL can be found in portal: Settings -> Properties -> Blob Service
+
+            Uri serviceUri = new Uri("https://<your-storage-account-name>.blob.core.windows.net/");
+            StorageSharedKeyCredential credential = new StorageSharedKeyCredential(accountName, accountKey);
+            BlobServiceClient blobServiceClient = new BlobServiceClient(serviceUri, credential);*/
+
+
+/*
             //////////////////////////////////////////
             /// Shared Access Signature (SAS) Authentication
             /// 
-            var sasURL = "https://ibstrg02.blob.core.windows.net/?sv=2021-12-02&ss=bfqt&srt=sco&sp=rwdlacupiytfx&se=2023-03-08T17:50:47Z&st=2023-03-08T09:50:47Z&spr=https&sig=to9DFAiocg%2FbFar6XHYGrB2Nrr3n677j4zTZnO9ukxY%3D";
+            var sasURL = "<your-generated-sas-url>";
             UriBuilder sasUri = new UriBuilder(sasURL);
-            BlobServiceClient blobServiceClient = new BlobServiceClient(sasUri.Uri);
+            BlobServiceClient blobServiceClient = new BlobServiceClient(sasUri.Uri);*/
 
             BlobContainerClient containerClient = blobServiceClient.GetBlobContainerClient(containerName);
 
