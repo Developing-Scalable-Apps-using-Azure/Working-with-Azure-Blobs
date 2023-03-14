@@ -13,12 +13,10 @@ Create an Azure Storage Account using CLI with a container called images
 Create a Storage Account
 ```
 az storage account create -n <mystorageaccountname> -g <My-Resource-Group> -l eastus --sku Standard_LRS
-az storage account create -n ibstrg02 -g Sid-RG-01 -l eastus --sku Standard_LRS
-
 ```
 Create a container
 ```
-az storage container create -n images --account-name ibstrg02 --fail-on-exist 
+az storage container create -n images --account-name <mystorageaccountname> --fail-on-exist 
 ```
 
 ### Step 2 - Connect using Azure Storage Explorer
